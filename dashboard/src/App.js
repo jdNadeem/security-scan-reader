@@ -15,8 +15,8 @@ function App() {
         <div className="container">
           <Switch>
               <Route exact path="/" component={List}/>
-              <Route path="/form" component={Form}/>
-              <Route path="/scan/:id" component={View} />
+              <Route exact path="/scan" component={Form}/>
+              <Route exact path="/scan/:id" component={View} />
           </Switch>
          </div>
       </Fragment>

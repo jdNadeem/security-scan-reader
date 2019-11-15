@@ -58,7 +58,7 @@ class List extends Component {
                                                 </h3>
                                             </td>
                                             <td>
-                                                <Link to = {`/scan/${scan._id}`}>
+                                                <Link to={`/scan/${scan._id}`}>
                                                     <button className="btn btn-dark btn-sm">
                                                         View
                                                     </button>

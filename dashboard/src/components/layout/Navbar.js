@@ -12,7 +12,7 @@ const Navbar = () => {
 
                 <Dropdown.Menu>
                     <Dropdown.Item>
-                        <Link className="dropdown-item" to="/form">Create</Link>
+                        <Link className="dropdown-item" to="/scan">Create</Link>
                     </Dropdown.Item>
                     <Dropdown.Item>
                         <Link className="dropdown-item" to="/">View List</Link>

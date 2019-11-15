@@ -1,0 +1,21 @@
+version: "3.7"
+
+# Define the services/containers to be run
+services:
+ react: # Specify the name of the service
+  build: dashboard # Specify the directory of the Dockerfile
+  ports:
+   - "3000:3000" # Specify port mapping
+ 
+ express: # Specify the name of the service
+  build: api # Specify the directory of the Dockerfile
+  ports:
+   - "5000:5000" # Specify port mapping
+  links:
+   - mongo # Link this service to database service
+ 
+ mongo: # Specify the name of the service
+  container_name: mongo
+  image: mongo
+  ports:
+   - "27017:27017" # Specify port forwarding

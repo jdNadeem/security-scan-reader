@@ -1,0 +1,4 @@
+/api/node_modules
+/api/package-lock.json
+/dashboard/node_modules
+/dashboard/package-lock.json
